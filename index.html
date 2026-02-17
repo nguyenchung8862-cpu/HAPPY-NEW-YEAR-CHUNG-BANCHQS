@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>CHÚC TẾT 2026 BY CHUNG</title>
+		<title>CHÚC TẾT 2026 - BY CHUNG</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover" />
 		<meta name="mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -116,7 +116,7 @@
 			}
 
 			/* Responsive cho mobile */
-			@media (max-width: 768px) {S
+			@media (max-width: 768px) {
 				.wish-text {
 					font-size: 0.9rem; /* Tăng font-size một chút để đọc tốt hơn */
 					padding: 0.35rem 1rem; /* Tăng padding để có không gian hơn */
@@ -235,7 +235,7 @@
 			/* Ẩn nút pause và nút cài đặt */
 			.pause-btn,
 			.settings-btn {
-				display: none !important;\
+				display: none !important;
 			}
 		/* ===== FIX FULL MOBILE SCREEN ===== */
 
@@ -266,8 +266,7 @@
 		padding-bottom: env(safe-area-inset-bottom);
 		padding-top: env(safe-area-inset-top);
 		}
-		/* ===== CHỮ NỀN NĂM MỚI ===== */
-
+	
 		/* ===== CHỮ NỀN NĂM MỚI ===== */
 
 		.newyear-bg-text {
@@ -276,7 +275,6 @@
   	  	left: 50%;
   	 	transform: translate(-50%, -50%);
   	  	z-index: 1;
-		animation: newYearGlow 3s ease-in-out infinite alternate;
 
   	  	font-family: 'Dancing Script', cursive;
   	  	font-size: clamp(2.2rem, 9vw, 5rem);
@@ -326,209 +324,449 @@
 
 		body {
     		overflow-x: hidden;
-    		position: fixed;
     		width: 100%;
 		}
-		@keyframes newYearGlow {
-    			0% {
-        		text-shadow:
-            		0 0 30px rgba(255,215,0,0.8),
-            		0 0 40px rgba(255,140,0,0.6);
-    		}
-    			100% {
-        		text-shadow:
-            		0 0 60px rgba(255,215,0,4),
-            		0 0 600px rgba(255,140,0,0.8);
-    		}
-		}
-				.year {
-    				color: #ffd700;
-    				font-size: 0.9em;
-    				text-shadow:
-        		0 0 30px gold,
-        		0 0 30px orange,
-        		0 0 30px red;
-    			animation: yearPulse 1.5s ease-in-out infinite alternate;
-		}
-
-				@keyframes yearPulse {
-    			from { transform: scale(1); }
-    			to { transform: scale(1.15); }
-		}
-			/* ===== CÁNH HOA RƠI ===== */
-
-				.petals-layer {
-    				position: fixed;
-    				inset: 0;
-    				pointer-events: none;
-    				overflow: hidden;
-    				z-index: 5;
-		}
-
-				.petal {
-    				position: absolute;
-    				top: -50px;
-    				width: 18px;
-    				height: 18px;
-    				background: pink;
-    				border-radius: 50% 50% 50% 0;
-    				opacity: 0.8;
-    				animation: fall linear infinite;
-		}
-
-				.petal.yellow {
-    				background: gold;
-		}
-
-				@keyframes fall {
-    				0% {
-        			transform: translateY(0) rotate(0deg);
-        			opacity: 0;
-    		}
-    				10% {
-        			opacity: 1;
-    		}
-    				100% {
-        			transform: translateY(110vh) rotate(360deg);
-        			opacity: 0;
-    		}
-		}
-			/* ===== HOA ĐÀO / MAI RƠI ===== */
-
-				/* Layer hoa rơi */
-				.petals-layer {
-    				position: fixed;
-    				inset: 0;
-    				pointer-events: none;
-    				overflow: hidden;
-    				z-index: 20; /* Quan trọng: phải cao hơn canvas */
-			}
-
-
-				.flower {
-    				position: absolute;
-    				top: -60px;
-    				width: 28px;
-    				height: 28px;
-    				opacity: 0.9;
-    				animation: flowerFall linear infinite;
-			}
-
-				@keyframes flowerFall {
-    				0% {
-        			transform: translateY(0) translateX(0) rotate(0deg);
-        			opacity: 0;
-    			}
-    				10% {
-        			opacity: 1;
-    			}
-    				50% {
-        			transform: translateY(50vh) translateX(25px) rotate(180deg);
-    			}
-    				100% {
-        			transform: translateY(110vh) translateX(-25px) rotate(360deg);
-        			opacity: 0;
-    			}
-			}
-			/* ===== DESIGNER CREDIT ===== */
 			.designer-credit {
     			position: fixed;
-    			bottom: 10px;
+    			bottom: 15px;
     			left: 50%;
     			transform: translateX(-50%);
     			z-index: 9999;
-
-    			font-size: 14px;
-    			font-family: 'Dancing Script', cursive;
-
     			color: #ffffff;
-    			text-align: center;
-
-    			text-shadow:
-        		0 0 6px rgba(255,255,255,0.8),
-        		0 0 12px rgba(255,105,180,0.8),
-        		0 0 20px rgba(255,20,147,0.6);
-
-    			pointer-events: none;
-    			user-select: none;
-		}
-		/* ===== COUNTDOWN 2026 ===== */
-			.countdown {
-    			position: absolute;
-    			top: 65%;
-    			left: 50%;
-    			transform: translate(-50%, -50%);
-    			z-index: 30;
-
+    			font-size: 20px;
     			font-family: 'Dancing Script', cursive;
-    			font-size: clamp(0.9rem, 3vw, 1.6rem);
-    			font-weight: 500;
-    			letter-spacing: 1px;
     			text-align: center;
+    			text-shadow: 0 0 8px rgba(255,255,255,0.8);
+    			pointer-events: none;
+		}
+		/* ===== HƯỚNG DẪN LUNG LINH TẾT 2026 ===== */
 
-    			color: #ffd700;
+		.designer-credit {
+    		position: fixed;
+    		bottom: 20px;
+    		left: 50%;
+    		transform: translateX(-50%);
+    		z-index: 9999;
+    		text-align: center;
+    		font-family: 'Dancing Script', cursive;
+    		font-size: clamp(16px, 4vw, 22px);
+    		font-weight: 600;
+    		letter-spacing: 1px;
+    		color: #ffd700;
 
-    			text-shadow:
-        		0 0 8px rgba(255,215,0,0.8),
-        		0 0 16px rgba(255,140,0,0.6);
-
-    			transition: all 1.5s ease;
+    		animation: glowText 2s infinite alternate, floatText 3s ease-in-out infinite;
 		}
 
-		/* 10 giây cuối */
-			.countdown.big {
-    			font-size: clamp(3rem, 10vw, 6rem);
-    			animation: pulse 0.8s infinite;
+		/* Tên designer nhỏ hơn */
+		.designer-name {
+    		display: block;
+    		font-size: 14px;
+    		margin-top: 4px;
+    		color: #ffffffcc;
+		}
+
+		/* Phát sáng */
+		@keyframes glowText {
+    		0% {
+        	text-shadow:
+            	0 0 10px #ffd700,
+            	0 0 20px #ff8c00,
+            	0 0 40px #ff4500;
+    		}
+    		100% {
+        	text-shadow:
+            	0 0 20px #fff,
+            	0 0 40px #ff69b4,
+            	0 0 60px #ff1493;
+    		}
+		}
+
+		/* Nhẹ nhàng trôi lên xuống */
+		@keyframes floatText {
+    		0%, 100% {
+        	transform: translate(-50%, 0px);
+    		}
+    		50% {
+       		transform: translate(-50%, -6px);
+    		}
+		}
+			/* ===== COUNTDOWN NHỎ GỌN ===== */
+		.countdown {
+    		position: absolute;
+    		top: 60%;
+    		left: 50%;
+    		transform: translate(-50%, -50%);
+    		z-index: 5;
+
+    		font-family: 'Dancing Script', cursive;
+
+    		font-size: clamp(0.8rem, 2.2vw, 1.4rem); /* NHỎ LẠI RÕ RỆT */
+    		font-weight: 400;
+    		letter-spacing: 1px;
+    		text-align: center;
+
+    		color: #ffd700;
+
+    		text-shadow:
+        	0 0 6px rgba(255,215,0,0.6),
+        	0 0 12px rgba(255,140,0,0.5);
+		}
+
+		@keyframes glowCountdown {
+    		from {
+        	text-shadow:
+            	0 0 10px #ffd700,
+            	0 0 20px #ff8c00;
+    		}
+    		to {
+        	text-shadow:
+            	0 0 20px #fff,
+            	0 0 40px #ff69b4,
+            	0 0 60px #ff1493;
+    		}
+		}
+		.countdown.big {
+    		font-size: clamp(3rem, 12vw, 8rem);
+    		animation: pulse 0.8s infinite;
 		}
 
 		@keyframes pulse {
-    			0% { transform: translate(-50%, -50%) scale(1); }
-    			50% { transform: translate(-50%, -50%) scale(1.2); }
-    			100% { transform: translate(-50%, -50%) scale(1); }
+    		0% { transform: translate(-50%, -50%) scale(1); }
+    		50% { transform: translate(-50%, -50%) scale(1.2); }
+    		100% { transform: translate(-50%, -50%) scale(1); }
 		}
 
-		/* Khi giao thừa */
+		.screen-flash {
+    		position: fixed;
+    		inset: 0;
+    		background: white;
+    		opacity: 0;
+    		pointer-events: none;
+    		z-index: 9999;
+		}
+	/* Hiệu ứng nổ số */
+		.countdown.explode {
+    		font-size: clamp(4rem, 14vw, 9rem);
+    		animation: explodeAnim 0.6s ease-out forwards;
+	}
+
+		@keyframes explodeAnim {
+    		0% {
+        	transform: translate(-50%, -50%) scale(1);
+        	opacity: 1;
+    	}
+    		50% {
+        	transform: translate(-50%, -50%) scale(2.5);
+        	opacity: 1;
+    	}
+    		100% {
+        	transform: translate(-50%, -50%) scale(0);
+        	opacity: 0;
+    	}
+	}
+	/* Khi vừa giao thừa */
 		.countdown.celebrate {
-    			font-size: clamp(2.5rem, 8vw, 5rem);
-    			animation: pulse 1s infinite;
-		}
+    		font-size: clamp(3rem, 10vw, 6rem);
+    		animation: pulse 1s infinite;
+	}
 
-		/* Sau khi ăn mừng → lùi ra sau */
+	/* Sau khi ăn mừng xong → lùi ra sau */
 		.countdown.background-mode {
-    			font-size: clamp(1.2rem, 3vw, 2rem);
-    			opacity: 0.3;
-    			top: 35%;
-    			z-index: 2;
+    		font-size: clamp(1.5rem, 4vw, 2.5rem);
+    		opacity: 0.3;
+    		top: 30%;
+    		z-index: 1;
+    		transition: all 1.5s ease;
+	}
+	/* ===== BAO LÌ XÌ ===== */
+		.lixi-container {
+    		position: fixed;
+    		right: 20px;
+    		bottom: 100px;
+    		z-index: 9999;
+	}
+
+		.lixi-envelope {
+    		font-size: 48px;
+    		cursor: pointer;
+    		animation: lixiShake 1.5s infinite ease-in-out;
+    		filter: drop-shadow(0 0 10px gold);
+	}
+
+		@keyframes lixiShake {
+    		0% { transform: rotate(0deg); }
+    		25% { transform: rotate(-8deg); }
+    		50% { transform: rotate(8deg); }
+    		75% { transform: rotate(-6deg); }
+    		100% { transform: rotate(0deg); }
+	}
+
+	/* ===== POPUP ===== */
+		.bank-popup {
+    		position: fixed;
+    		inset: 0;
+    		background: rgba(0,0,0,0.7);
+    		display: none;
+    		justify-content: center;
+    		align-items: center;
+    		z-index: 10000;
+	}
+
+		.bank-box {
+    		background: linear-gradient(145deg, #8B0000, #B22222);
+   	 	padding: 30px;
+    		border-radius: 20px;
+    		width: 90%;
+    		max-width: 350px;
+    		text-align: center;
+    		box-shadow: 0 0 30px gold;
+    		animation: popupScale 0.3s ease;
+	}
+
+		@keyframes popupScale {
+    		from { transform: scale(0.7); opacity: 0; }
+    		to { transform: scale(1); opacity: 1; }
+	}
+
+		.bank-box h3 {
+    		color: gold;
+    		margin-bottom: 20px;
+	}
+
+		.bank-box input {
+    		width: 100%;
+    		padding: 10px;
+    		border-radius: 10px;
+    		border: none;
+    		margin-bottom: 15px;
+    		font-size: 16px;
+    		text-align: center;
+	}
+
+		.bank-actions button {
+    		padding: 8px 15px;
+    		margin: 5px;
+    		border: none;
+    		border-radius: 8px;
+    		cursor: pointer;
+    		font-weight: bold;
+	}
+
+		#bankConfirm {
+    		background: gold;
+    		color: #8B0000;
+	}
+
+		#bankClose {
+    		background: white;
+    		color: #8B0000;
+	}
+	/* ===== BAO LÌ XÌ ĐỎ ===== */
+		.lixi-container {
+    		position: fixed;
+    		right: 20px;
+    		bottom: 100px;
+    		z-index: 9999;
+	}
+
+		.lixi-envelope {
+    		width: 90px;
+    		height: 120px;
+    		background: linear-gradient(145deg, #b30000, #ff1a1a);
+    		border-radius: 12px;
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		cursor: pointer;
+    		position: relative;
+
+    		box-shadow:
+        	0 0 20px gold,
+        	inset 0 0 15px rgba(255, 215, 0, 0.6);
+
+    		animation: lixiShake 1.5s infinite ease-in-out;
+    		transition: transform 0.2s;
+	}
+
+		.lixi-envelope:hover {
+    		transform: scale(1.1);
+	}
+
+	/* Chữ LÌ XÌ */
+		.lixi-text {
+    		color: gold;
+    		font-weight: bold;
+    		font-size: 20px;
+    		letter-spacing: 2px;
+    		text-shadow:
+        	0 0 5px #ffd700,
+        	0 0 10px #ffae00,
+        	0 0 20px #ff4500;
+	}
+	/* Lắc nhẹ */
+		@keyframes lixiShake {
+    		0% { transform: rotate(0deg); }
+    		25% { transform: rotate(-6deg); }
+    		50% { transform: rotate(6deg); }
+    		75% { transform: rotate(-4deg); }
+    		100% { transform: rotate(0deg); }
+	}
+
+	/* Responsive mobile */
+		@media (max-width: 768px) {
+    		.lixi-envelope {
+       		width: 70px;
+        	height: 95px;
+    	}
+
+    		.lixi-text {
+        	font-size: 16px;
+    	}
+	}
+	
+		/* ===== POPUP KẾT QUẢ ===== */
+			.lixi-result {
+    			position: fixed;
+    			inset: 0;
+    			background: rgba(0,0,0,0.85);
+    			display: none;
+    			justify-content: center;
+    			align-items: center;
+    			z-index: 10001;
 		}
-		/* ===== DÒNG CHẠM MÀN HÌNH ===== */
-			.designer-credit {
-    			position: absolute;
-    			bottom: 25px;
-    			width: 100%;
+
+			.lixi-result-box {
+    			background: linear-gradient(145deg, #8B0000, #B22222);
+    			padding: 30px;
+    			border-radius: 20px;
+    			width: 95%;
+    			max-width: 400px;
     			text-align: center;
-    			z-index: 50;
-
-    			font-family: 'Dancing Script', cursive;
-    			font-size: 1rem;
-
-    			color: #ffd700; /* đổi thành vàng */
-
-    			text-shadow:
-        		0 0 10px gold,
-        		0 0 20px orange,
-        		0 0 30px red;
+    			box-shadow: 0 0 40px gold;
+    			animation: popupScale 0.3s ease;
 		}
 
-			.designer-name {
-    			font-size: 0.9em;
-    			opacity: 0.85;
+			.lixi-options {
+    			display: grid;
+    			grid-template-columns: 1fr 1fr;
+    			gap: 12px;
+    			margin: 20px 0;
 		}
 
-		@keyframes glowText {
-    			from { opacity: 0.6; }
-    			to { opacity: 1; }
+			.lixi-card {
+    			background: linear-gradient(145deg, #b30000, #ff1a1a);
+    			color: gold;
+    			padding: 15px;
+    			border-radius: 12px;
+    			cursor: pointer;
+    			font-weight: bold;
+    			box-shadow: 0 0 15px gold;
+    			transition: transform 0.2s;
 		}
 
+			.lixi-card:hover {
+    			transform: scale(1.05);
+		}
+
+			.lixi-card.special {
+    			grid-column: span 2;
+    			background: linear-gradient(145deg, #ff0000, #ff6600);
+		}
+
+			.lixi-message {
+    			margin-top: 15px;
+    			font-size: 18px;
+    			color: #ffd700;
+    			text-shadow: 0 0 10px gold;
+		}
+			.lixi-grid {
+    			display: grid;
+    			grid-template-columns: repeat(3, 1fr);
+    			gap: 15px;
+    			margin-top: 20px;
+		}
+
+			.lixi-flip {
+    			width: 100%;
+    			height: 100px;
+    			perspective: 1000px;
+    			cursor: pointer;
+    			position: relative;
+		}
+
+			.lixi-flip-inner {
+    			position: relative;
+    			width: 100%;
+    			height: 100%;
+    			transition: transform 0.6s;
+    			transform-style: preserve-3d;
+		}
+
+			.lixi-flip.flipped .lixi-flip-inner {
+    			transform: rotateY(180deg);
+		}
+			.lixi-front, .lixi-back {
+    			position: absolute;
+    			width: 100%;
+    			height: 100%;
+    			border-radius: 12px;
+    			display: flex;
+    			justify-content: center;
+    			align-items: center;
+    			backface-visibility: hidden;
+    			font-weight: bold;
+		}
+
+			.lixi-front {
+    			background: linear-gradient(145deg, #b30000, #ff1a1a);
+    			color: gold;
+    			box-shadow: 0 0 15px gold;
+		}
+			.lixi-back {
+    			background: gold;
+    			color: red;
+    			transform: rotateY(180deg);
+
+    			display: flex;
+    			flex-direction: column;   /* thêm dòng này */
+    			justify-content: center;
+    			align-items: center;
+    			gap: 8px;                 /* thêm dòng này */
+    			padding: 10px;
+    			text-align: center;
+		}
+			.lixi-message {
+    			margin-top: 20px;
+    			font-size: 20px;
+    			color: gold;
+    			text-shadow: 0 0 10px gold;
+		}
+			.lixi-result-box {
+    			position: relative;
+		}
+			.lixi-close-btn {
+    			position: absolute;
+    			top: 10px;
+    			right: 15px;
+    			background: none;
+    			border: none;
+    			color: white;
+    			font-size: 22px;
+    			cursor: pointer;
+		}
+			.lixi-title {
+    			font-size: 18px;
+    			font-weight: bold;
+    			color: gold;
+    			text-shadow: 0 0 10px orange;
+    			margin-bottom: 10px;
+    			animation: glow 1.5s infinite alternate;
+		}
+
+			@keyframes glow {
+    			from { text-shadow: 0 0 5px gold; }
+    			to { text-shadow: 0 0 20px orange; }
+		}
 	</style>
 		<meta name="msapplication-TileColor" content="#000000" />
 		<meta name="msapplication-TileImage" content="./images/favicon.png" />
@@ -572,7 +810,6 @@
 				<!-- Layer lời chúc bay trên trời -->
 				<div class="countdown" id="countdown"></div>
 				<div class="wishes-layer" id="wishes-layer"></div>
-				<div class="petals-layer"></div>
 				<div class="canvas-container">
 					<canvas id="trails-canvas"> </canvas>
 					<canvas id="main-canvas"> </canvas>
@@ -681,131 +918,52 @@
 		<script src="./js/MyMath.js"></script>
 		<script src="./js/script.js"></script>
 		<script src="./js/music.js"></script>
-		<audio id="bg-music" src="./music/background.mp3" loop></audio>	
-		
+		<audio id="bg-music" src="./music/background.mp3" loop></audio>
 		<script>
-			const petalsLayer = document.querySelector(".petals-layer");
-
-			function createFlower() {
-    			const flower = document.createElement("div");
-    			flower.classList.add("flower");
-
-    			const isYellow = Math.random() > 0.5;
-
-    			flower.innerHTML = `
-        			<svg viewBox="0 0 100 100" width="100%" height="100%">
-            			<g fill="${isYellow ? "#FFD700" : "#FF69B4"}">
-                		<circle cx="50" cy="20" r="20"/>
-                		<circle cx="80" cy="50" r="20"/>
-                		<circle cx="50" cy="80" r="20"/>
-                		<circle cx="20" cy="50" r="20"/>
-                		<circle cx="50" cy="50" r="15" fill="#FFF176"/>
-            		</g>
-        		</svg>
-    				`;
-
-    				flower.style.left = Math.random() * 100 + "vw";
-    				flower.style.animationDuration = (8 + Math.random() * 6) + "s";
-
-    				petalsLayer.appendChild(flower);
-
-    				setTimeout(() => {
-        			flower.remove();
-    				}, 15000);
-			}
-
-				setInterval(createFlower, 1000);
-		</script>
-			<div class="designer-credit">
-    			Chạm vào màn hình 🎇 <br>
-    			<span class="designer-name">Designer by Nguyễn Thành Chung</span>
+		document.body.addEventListener("click", function () {
+    		const music = document.getElementById("bg-music");
+    		if (music && music.paused) {
+        	music.play().catch(() => {});
+    		}
+		}, { once: true });
+	</script>
+	
+		<div class="designer-credit">
+    		Chạm vào màn hình 🎇 <br>
+    		<span class="designer-name">Designer by Thành Chung</span>
 		</div>
-		<script>
-			const countdownEl = document.getElementById("countdown");
+	<script>
+		const countdownEl = document.getElementById("countdown");
 
-		// 00:00 ngày 17/02/2026
+	// 00:00 ngày 17/02/2026 (mùng 1 Tết)
 		const lunarNewYear = new Date(2026, 1, 17, 0, 0, 0).getTime();
 
 		function updateCountdown() {
     		const now = new Date().getTime();
     		const distance = lunarNewYear - now;
 
+    	// ===== KHI TỚI GIAO THỪA =====
     		if (distance <= 0) {
-        clearInterval(timer);
+        	clearInterval(timer);
 
-        countdownEl.innerHTML = "🧧 CHÚC MỪNG NĂM MỚI 2026 🧧";
-        countdownEl.classList.remove("big");
-        countdownEl.classList.add("celebrate");
+        	countdownEl.innerHTML = "🧧 CHÚC MỪNG NĂM MỚI 2026 🧧";
+        	countdownEl.classList.remove("big");
+        	countdownEl.classList.add("celebrate");
 
-        const autoLaunch = document.querySelector(".auto-launch");
-        const finale = document.querySelector(".finale-mode");
+        	const autoLaunch = document.querySelector(".auto-launch");
+        	const finale = document.querySelector(".finale-mode");
 
-        if (autoLaunch) {
-            autoLaunch.checked = true;
-            autoLaunch.dispatchEvent(new Event("change"));
+        	if (autoLaunch) {
+            	autoLaunch.checked = true;
+            	autoLaunch.dispatchEvent(new Event("change"));
         }
 
-        if (finale) {
-            finale.checked = true;
-            finale.dispatchEvent(new Event("change"));
+        	if (finale) {
+            	finale.checked = true;
+            	finale.dispatchEvent(new Event("change"));
         }
 
-        // 4 giây sau → thu nhỏ ra sau
-        setTimeout(() => {
-            countdownEl.classList.remove("celebrate");
-            countdownEl.classList.add("background-mode");
-        }, 4000);
-
-        return;
-    }
-
-    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((distance / 1000 / 60) % 60);
-    const seconds = Math.floor((distance / 1000) % 60);
-
-    if (hours === 0 && minutes === 0 && seconds <= 10) {
-        countdownEl.classList.add("big");
-        countdownEl.innerHTML = seconds;
-    } else {
-        countdownEl.classList.remove("big");
-        countdownEl.innerHTML =
-            `Đếm ngược 2025<br>${hours} giờ : ${minutes} phút : ${seconds} giây`;
-    		}
-		}
-			const timer = setInterval(updateCountdown, 1000);
-			updateCountdown();
-		</script>
-		<script>
-			const countdownEl = document.getElementById("countdown");
-
-		// 00:00 ngày 17/02/2026
-			const lunarNewYear = new Date(2026, 1, 17, 0, 0, 0).getTime();
-
-			function updateCountdown() {
-    			const now = new Date().getTime();
-    			const distance = lunarNewYear - now;
-
-    			if (distance <= 0) {
-        		clearInterval(timer);
-
-        		countdownEl.innerHTML = "🧧 CHÚC MỪNG NĂM MỚI 2026 🧧";
-        		countdownEl.classList.remove("big");
-        		countdownEl.classList.add("celebrate");
-
-        		const autoLaunch = document.querySelector(".auto-launch");
-        		const finale = document.querySelector(".finale-mode");
-
-        		if (autoLaunch) {
-            		autoLaunch.checked = true;
-            		autoLaunch.dispatchEvent(new Event("change"));
-        	}
-
-        		if (finale) {
-            		finale.checked = true;
-            		finale.dispatchEvent(new Event("change"));
-        	}
-
-        	// 4 giây sau → thu nhỏ ra sau
+        // Sau 4 giây → thu nhỏ ra phía sau
         		setTimeout(() => {
             		countdownEl.classList.remove("celebrate");
             		countdownEl.classList.add("background-mode");
@@ -814,6 +972,7 @@
         		return;
     		}
 
+    		// ===== ĐANG ĐẾM NGƯỢC =====
     			const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
     			const minutes = Math.floor((distance / 1000 / 60) % 60);
     			const seconds = Math.floor((distance / 1000) % 60);
@@ -828,8 +987,241 @@
     		}
 		}
 
+		// Chạy countdown
 			const timer = setInterval(updateCountdown, 1000);
 			updateCountdown();
+		</script>
+		<!-- ===== BAO LÌ XÌ ===== -->
+			<div class="lixi-container">
+    			<div class="lixi-envelope" id="lixiBtn">
+        		<div class="lixi-text">LÌ XÌ</div>
+    			</div>
+			</div>
+		<!-- ===== POPUP NHẬP SỐ TÀI KHOẢN ===== -->
+			<div class="bank-popup" id="bankPopup">
+    			<div class="bank-box">
+        		<h3>💰 Nhập số tài khoản nhận lì xì</h3>
+        		<input type="text" id="bankInput" placeholder="Nhập số tài khoản..." />
+        		<div class="bank-actions">
+            		<button id="bankConfirm">Xác nhận</button>
+            		<button id="bankClose">Đóng</button>
+        		</div>
+    			</div>
+			</div>
+		<!-- ===== KẾT QUẢ LÌ XÌ ===== -->
+			<div class="lixi-result" id="lixiResult">
+    			<div class="lixi-result-box">
+        		<h2>🎉 Chọn 1 Bao Lì Xì 🎉</h2>
+			<button id="lixiCloseResult" class="lixi-close-btn">✖</button>
+        		<div class="lixi-title">🧧 Mệnh giá từ 1.000VNĐ – 500.000VNĐ 🧧
+			</div>
+			<div class="lixi-grid">
+            		<div class="lixi-flip"></div>
+            		<div class="lixi-flip"></div>
+            		<div class="lixi-flip"></div>
+            		<div class="lixi-flip"></div>
+            		<div class="lixi-flip"></div>
+            		<div class="lixi-flip"></div>
+        	</div>
+	<div id="winnerList" style="margin-top:15px;font-size:14px;color:white;"></div>
+        <div class="lixi-message" id="lixiMessage"></div>
+    </div>
+</div>
+
+	<script>
+			const lixiBtn = document.getElementById("lixiBtn");
+			const bankPopup = document.getElementById("bankPopup");
+			const bankClose = document.getElementById("bankClose");
+			const bankConfirm = document.getElementById("bankConfirm");
+
+			lixiBtn.addEventListener("click", () => {
+    			bankPopup.style.display = "flex";
+		});
+
+			bankClose.addEventListener("click", () => {
+    			bankPopup.style.display = "none";
+		});
+
+			const lixiResult = document.getElementById("lixiResult");
+			const lixiMessage = document.getElementById("lixiMessage");
+
+			const lixiCloseResult = document.getElementById("lixiCloseResult");
+			lixiCloseResult.addEventListener("click", () => {
+    			lixiResult.style.display = "none";
+    			opened = false;
+    		// reset bao lì xì
+    			document.querySelectorAll(".lixi-flip").forEach(card => {
+    			card.classList.remove("flipped");
+
+    			const back = card.querySelector(".lixi-back");
+    			if (back) back.innerHTML = "";
+		});
+    	    		lixiMessage.innerHTML = "";
+		});
+			bankConfirm.addEventListener("click", () => {
+    			const value = document.getElementById("bankInput").value;
+
+    			if (value.trim() !== "") {
+        		bankPopup.style.display = "none";   // đóng popup nhập tài khoản
+        		lixiResult.style.display = "flex";  // mở popup chọn bao lì xì
+    			renderWinners();
+		} else {
+        		alert("Vui lòng nhập số tài khoản!");
+    		}
+		});
+
+		// Nút đóng kết quả
+			let opened = false;
+			document.querySelectorAll(".lixi-flip").forEach(card => {
+
+    			const inner = document.createElement("div");
+    			inner.className = "lixi-flip-inner";
+
+    			const front = document.createElement("div");
+    			front.className = "lixi-front";
+    			front.innerHTML = "🧧 LÌ XÌ";
+
+    			const back = document.createElement("div");
+    			back.className = "lixi-back";
+
+    			inner.appendChild(front);
+    			inner.appendChild(back);
+    			card.appendChild(inner);
+
+    			card.addEventListener("click", () => {
+
+        		if (opened) return;
+        		opened = true;
+
+        		card.classList.add("flipped");
+
+        		let wonMoney = 0;
+			let result;
+
+        		let random = Math.random();
+		
+			if (random < 0.60) {
+    		// 60% trúng tiền nhỏ
+    			const smallMoney = [1000, 2000, 5000];
+    			const randomMoney = smallMoney[Math.floor(Math.random() * smallMoney.length)];
+
+    			wonMoney = randomMoney;
+    			result = "💸 " + randomMoney.toLocaleString() + " VNĐ";
+    			moneyFirework();
+
+			} else if (random < 0.95) {
+    		// 35% ra câu chúc
+    			wonMoney = 0;
+    			result = "🎉 Chúc mừng năm mới 2026";
+
+		} else {
+    			// 5% trúng 10.000 VNĐ
+    			wonMoney = 10000;
+    			result = "💰 10.000 VNĐ";
+    			moneyFirework();
+		}
+        		if (wonMoney > 0) {
+    			back.innerHTML = `
+    			<div style="font-size:18px;font-weight:bold;">
+        		${result}
+    			</div>
+    			<button id="claimBtn" 
+        		style="
+            		padding:8px 15px;
+            		background:red;
+            		color:white;
+            		border:none;
+            		border-radius:8px;
+            		cursor:pointer;
+        		">
+        		Nhận lì xì
+    			</button>
+		`;
+    			setTimeout(() => {
+        		document.getElementById("claimBtn").addEventListener("click", function() {
+
+            		const bank = document.getElementById("bankInput").value || "Chưa nhập";
+			saveWinner(bank, wonMoney);
+            		const message = 
+            		"Số tài khoản: " + bank + 
+            		" | Số tiền trúng: " + wonMoney + " VNĐ";
+
+            		const zaloURL = "https://zalo.me/?text=" + encodeURIComponent(message);
+			window.open(zaloURL, "_blank");
+        	});
+    		}, 100);
+		} else {
+    			back.innerHTML = result;
+		}
+
+        		document.getElementById("lixiMessage").innerHTML =
+            		"🎊 Bạn đã nhận được bất ngờ!";
+    		});
+		});
+			function moneyFirework() {
+    			for (let i = 0; i < 60; i++) {
+        		const fire = document.createElement("div");
+        		fire.style.position = "fixed";
+        		fire.style.width = "6px";
+        		fire.style.height = "6px";
+        		fire.style.borderRadius = "50%";
+        		fire.style.background = `hsl(${Math.random()*360},100%,50%)`;
+        		fire.style.left = "50%";
+        		fire.style.top = "50%";
+        		fire.style.zIndex = "9999";
+        		document.body.appendChild(fire);
+
+        		const angle = Math.random() * 2 * Math.PI;
+        		const distance = Math.random() * 200 + 100;
+
+        		const x = Math.cos(angle) * distance;
+        		const y = Math.sin(angle) * distance;
+
+        		fire.animate([
+            			{ transform: "translate(0,0)", opacity: 1 },
+            			{ transform: `translate(${x}px, ${y}px)`, opacity: 0 }
+        	], {
+            		duration: 1200,
+            		easing: "ease-out"
+        	});
+
+        		setTimeout(() => fire.remove(), 1200);
+    		}
+		}
+			function saveWinner(bank, money) {
+    			let winners = JSON.parse(localStorage.getItem("lixiWinners")) || [];
+
+    			const now = new Date();
+    			const time = now.toLocaleString();
+
+    			winners.push({
+        		bank: bank,
+        		money: money,
+        		time: time
+    		});
+
+    			localStorage.setItem("lixiWinners", JSON.stringify(winners));
+    			renderWinners();
+		}
+
+			function renderWinners() {
+    			let winners = JSON.parse(localStorage.getItem("lixiWinners")) || [];
+    			const listDiv = document.getElementById("winnerList");
+
+    			if (winners.length === 0) {
+        		listDiv.innerHTML = "";
+        		return;
+    		}
+
+    			let html = "<b>🎉 Danh sách trúng tiền:</b><br>";
+
+    			winners.slice(-5).reverse().forEach(w => {
+        		html += `💸 ${w.bank} - ${w.money.toLocaleString()} VNĐ <br>`;
+    		});
+
+    			listDiv.innerHTML = html;
+		}
+		renderWinners();
 		</script>
 	</body>
 </html>
